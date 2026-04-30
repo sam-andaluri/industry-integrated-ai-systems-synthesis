@@ -29,10 +29,12 @@ The Scenario Reasoning Agent accepts natural language infrastructure scenarios a
 ```text
 integrative-synthesis/
 ├── README.md
+├── architecture_diagram.md
 ├── synthesis_system.ipynb
 ├── Reflective_Synthesis_Paper.md
 ├── Reflective_Synthesis_Paper.pdf
-├── architecture_diagram.md
+|── presentation.md
+|── presentation.html
 ├── requirements.txt
 ├── synthesis_results.json
 ├── machine-learning-project/          # Clone of prior project
@@ -86,7 +88,7 @@ uv --version
 
 Make sure the following tools are available on your system:
 
-- Python 3.10 or higher
+- Python 3.11 or higher
 - Jupyter with `nbconvert`
 - Pandoc for PDF generation
 
@@ -219,7 +221,7 @@ flowchart LR
     LLM --> R
 ```
 
-See `architecture_diagram.md` for detailed diagrams.
+See [Reasoning Agent Architecture](architecture_diagram.md) for detailed diagrams.
 
 ## References
 
