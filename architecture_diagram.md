@@ -2,7 +2,7 @@
 
 ## GPU Infrastructure Scenario Reasoning Agent
 
-### Key Design: Actual Model Integration
+### Model Integration
 
 Unlike a simple knowledge base lookup, this synthesis **loads and runs the actual trained models** from prior projects:
 

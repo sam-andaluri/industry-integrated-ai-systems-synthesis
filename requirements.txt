@@ -1,0 +1,23 @@
+# Integrative Industry Synthesis
+# GPU Infrastructure Scenario Reasoning Agent
+
+# Core
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# For ML Latency Predictor (analytical model using project findings)
+# XGBoost model loading skipped due to version incompatibility
+numpy>=1.24.0
+
+# For loading DL Demand Forecaster scalers
+joblib>=1.3.0
+scikit-learn>=1.3.0
+
+# For loading DL Demand Forecaster (Transformer model)
+torch>=2.0.0
+
+# For LLM API calls (OpenAI gpt-4o-mini with function calling)
+openai>=1.0.0
+python-dotenv>=1.0.0
+
