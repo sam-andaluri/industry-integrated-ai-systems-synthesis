@@ -91,6 +91,7 @@ Make sure the following tools are available on your system:
 - Python 3.11 or higher
 - Jupyter with `nbconvert`
 - Pandoc for PDF generation
+- marp-cli for Presentation generation
 
 Quick checks:
 
@@ -98,6 +99,7 @@ Quick checks:
 python --version
 python -m jupyter nbconvert --version
 pandoc --version
+marp --version
 ```
 
 ## 4. Create and Activate a Virtual Environment
@@ -166,18 +168,14 @@ The notebook runs these scenarios:
 
 ## 9. Generate the Report PDF
 
-If you update the report markdown, regenerate the PDF with:
-
 ```bash
 pandoc Reflective_Synthesis_Paper.md -o Reflective_Synthesis_Paper.pdf
 ```
 
-## 10. Generate Final `requirements.txt`
-
-After running the notebook, regenerate exact package versions:
+## 10. Generate presentation
 
 ```bash
-uv pip freeze > requirements.txt
+marp --html presentation.md
 ```
 
 ## Architecture
