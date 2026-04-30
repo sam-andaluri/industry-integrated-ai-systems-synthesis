@@ -42,9 +42,13 @@ The synthesis integrates four prior projects through three callable tools and an
 
 The agent produces structured output including the full reasoning chain, tool invocation log, synthesized analysis, prioritized recommendations, confidence assessment, known limitations, and ethical considerations. This transparency requirement—making the reasoning process auditable—is a deliberate design choice reflecting the responsible AI principles identified in the Generative AI Operations Advisor and AIOps Incident Response System.
 
+![System Architecture](images/system_architecture.png)
+
 ## 3. Integration of Prior Projects and Methods
 
 The integration strategy follows a tool-composition pattern where each prior project contributes a specialized capability that the orchestration layer invokes as needed. This differs from a monolithic approach where all projects would be merged into a single model or pipeline.
+
+![Model Integration](images/model_integration.png)
 
 **Machine Learning Latency Predictor** contributes predictive relationships between observable features and latency outcomes. The key insight is that model-specific historical performance is the strongest predictor—models that run slowly tend to continue running slowly. This finding enables the synthesis agent to reason about latency impact when scenarios mention specific models, adapter changes, or load increases. However, the model's R²=0.573 means 43% of variance remains unexplained, which the synthesis explicitly acknowledges when assessing confidence.
 

@@ -70,6 +70,42 @@ flowchart TB
     style AIOps fill:#bbdefb
 ```
 
+## Model Integration Diagram (Paper Section 3)
+
+Save as: `model_integration.png`
+
+```mermaid
+flowchart LR
+    subgraph Prior["Prior Projects"]
+        P1[ML Latency<br/>Predictor]
+        P2[DL Demand<br/>Forecaster]
+        P3[GenAI Operations<br/>Advisor]
+        P4[AIOps Incident<br/>Response]
+    end
+
+    subgraph Artifacts["Artifacts Used"]
+        A1[SHAP findings<br/>R²=0.573]
+        A2[transformer.pt<br/>R²=0.962]
+        A3[LLM prompts<br/>+ patterns]
+        A4[knowledge_base.json<br/>policies.json]
+    end
+
+    subgraph Tools["Synthesis Tools"]
+        T1[predict_latency]
+        T2[forecast_demand]
+        T3[analyze_incident]
+        O[LLM Orchestration]
+    end
+
+    P1 --> A1 --> T1
+    P2 --> A2 --> T2
+    P3 --> A3 --> O
+    P4 --> A4 --> T3
+
+    style O fill:#e3f2fd
+```
+
+
 ### Tool Execution Flow
 
 ```mermaid
