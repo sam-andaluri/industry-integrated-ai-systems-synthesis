@@ -48,8 +48,6 @@ The agent produces structured output including the full reasoning chain, tool in
 
 The integration strategy follows a tool-composition pattern where each prior project contributes a specialized capability that the orchestration layer invokes as needed. This differs from a monolithic approach where all projects would be merged into a single model or pipeline.
 
-![Model Integration](images/model_integration.png)
-
 **Machine Learning Latency Predictor** contributes predictive relationships between observable features and latency outcomes. The key insight is that model-specific historical performance is the strongest predictor—models that run slowly tend to continue running slowly. This finding enables the synthesis agent to reason about latency impact when scenarios mention specific models, adapter changes, or load increases. However, the model's R²=0.573 means 43% of variance remains unexplained, which the synthesis explicitly acknowledges when assessing confidence.
 
 **Deep Learning Demand Forecaster** contributes temporal structure understanding. The finding that demand patterns are largely linear and well-captured by 24-hour periodicity informs capacity planning advice: pre-scaling based on time-of-day is often more effective than reactive autoscaling, given the ~1 minute advance warning limitation. The cross-service transfer failure (R²=-1.743 when applying a code-service model to conversation traffic) also informs the synthesis—it warns that demand patterns are service-specific and should not be assumed to generalize.
@@ -57,6 +55,8 @@ The integration strategy follows a tool-composition pattern where each prior pro
 **Generative AI Operations Advisor** contributes the advisory generation pattern and critical ethical awareness. The scenario augmentation's 342% error on NumImages distribution demonstrates that synthetic data can mislead capacity planning, which the synthesis cites when flagging limitations. The over-reliance warning—that LLM advisors produce fluent recommendations even when potentially wrong—is carried forward as a standard ethical consideration in all synthesis outputs.
 
 **AIOps Incident Response System** contributes structured incident response patterns. The safeguard mechanisms (confidence thresholds, blast-radius checks, peak-hours delays) are directly applied when the synthesis handles reliability scenarios. The cross-incident memory pattern—escalating concern when the same error recurs on the same node—enables the synthesis to reason about degradation patterns rather than treating each event in isolation.
+
+![Model Integration](images/model_integration.png)
 
 ## 4. Technical Design Decisions and Tradeoffs
 
