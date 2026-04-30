@@ -1,0 +1,8 @@
+/agentic-ai-system/
+/deep-learning-project/
+/generative-ai-project/
+/machine-learning-project/
+.env
+__pycache__/*
+.DS_Store
+
