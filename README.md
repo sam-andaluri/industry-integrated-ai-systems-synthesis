@@ -15,6 +15,18 @@ The Scenario Reasoning Agent accepts natural language infrastructure scenarios a
 3. Synthesizes model outputs into actionable recommendations
 4. Reports confidence levels based on model performance metrics
 
+## Project Deliverables
+
+| File | Description |
+|------|-------------|
+| `synthesis_system.ipynb` | Main notebook with reasoning agent implementation |
+| `Reflective_Synthesis_Paper.pdf` | 1,500-2,000 word synthesis paper |
+| `architecture_diagrams.md` | Architecture diagrams |
+| `presentation.md` | Marp slide deck for defense - source in markdown |
+| `presentation.html` | Marp slide deck for defense - rendered in html |
+| `presentation_diagrams.md` | Mermaid source for architecture diagrams |
+| `images/` | Generated PNG diagrams for presentation |
+
 ## Prior Project Integration
 
 | Project | Artifact | Integration |
@@ -230,7 +242,7 @@ flowchart LR
     LLM --> R
 ```
 
-See [Reasoning Agent Architecture](architecture_diagram.md) for detailed diagrams.
+See [Reasoning Agent Architecture](architecture_diagrams.md) for detailed diagrams.
 
 ## References
 
