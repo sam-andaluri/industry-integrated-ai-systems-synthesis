@@ -3,6 +3,7 @@
 ## GPU Infrastructure Scenario Reasoning Agent: An Integrative Industry Synthesis
 
 **Date**: May 2026
+
 **Author**: Sambasiva Andaluri
 
 ---
