@@ -34,6 +34,7 @@ integrative-synthesis/
 ├── Reflective_Synthesis_Paper.md
 ├── Reflective_Synthesis_Paper.pdf
 |── presentation.md
+|── presentation_diagrams.md
 |── presentation.html
 ├── requirements.txt
 ├── synthesis_results.json
