@@ -36,6 +36,7 @@ integrative-synthesis/
 |── presentation.md
 |── presentation_diagrams.md
 |── presentation.html
+├── requirements.in
 ├── requirements.txt
 ├── synthesis_results.json
 ├── machine-learning-project/          # Clone of prior project
