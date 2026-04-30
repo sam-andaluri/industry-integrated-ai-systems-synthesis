@@ -115,10 +115,10 @@ source .venv/bin/activate
 
 ## 5. Install Dependencies
 
-Install the pinned dependencies from `requirements.txt`:
+Install the pinned dependencies from `requirements.in`:
 
 ```bash
-uv pip install -r requirements.txt
+uv pip install -r requirements.in
 ```
 
 ## 6. Setup Environment for OpenAI API
@@ -178,6 +178,15 @@ pandoc Reflective_Synthesis_Paper.md -o Reflective_Synthesis_Paper.pdf
 ```bash
 marp --html presentation.md
 ```
+
+## 11. Generate Final `requirements.txt`
+
+After running the notebook, regenerate exact package versions:
+
+```bash
+uv pip freeze > requirements.txt
+```
+
 
 ## Architecture
 
