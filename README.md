@@ -20,7 +20,7 @@ The Scenario Reasoning Agent accepts natural language infrastructure scenarios a
 | File | Description |
 |------|-------------|
 | `synthesis_system.ipynb` | Main notebook with reasoning agent implementation |
-| `Reflective_Synthesis_Paper.pdf` | 1,500-2,000 word synthesis paper |
+| `Reflective_Synthesis_Paper.pdf` | Synthesis paper |
 | `architecture_diagrams.md` | Architecture diagrams |
 | `presentation.md` | Marp slide deck for defense - source in markdown |
 | `presentation.html` | Marp slide deck for defense - rendered in html |
