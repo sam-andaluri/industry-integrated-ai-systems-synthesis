@@ -31,10 +31,10 @@ The Scenario Reasoning Agent accepts natural language infrastructure scenarios a
 
 | Project | Artifact | Integration |
 |---------|----------|-------------|
-| **Machine Learning Latency Predictor** | SHAP findings, correlation analysis | `predict_latency()` analytical model using XGBoost findings (R²=0.573) |
-| **Deep Learning Demand Forecaster** | `transformer_forecaster.pt`, `scaler.joblib` | `forecast_demand()` runs actual Transformer model (R²=0.962) |
-| **Generative AI Operations Advisor** | Advisory prompt templates | LLM synthesis of tool outputs |
-| **AIOps Incident Response System** | `knowledge_base.json`, `policies.json` | `analyze_incident()` searches KB with safeguards |
+| [**Machine Learning Latency Predictor**](https://github.com/sam-andaluri/machine-learning-project) | SHAP findings, correlation analysis | `predict_latency()` analytical model using XGBoost findings (R²=0.573) |
+| [**Deep Learning Demand Forecaster**](https://github.com/sam-andaluri/deep-learning-project) | `transformer_forecaster.pt`, `scaler.joblib` | `forecast_demand()` runs actual Transformer model (R²=0.962) |
+| [**Generative AI Operations Advisor**](https://github.com/sam-andaluri/generative-ai-project) | Advisory prompt templates | LLM synthesis of tool outputs |
+| [**AIOps Incident Response System**](https://github.com/sam-andaluri/agentic-ai-system) | `knowledge_base.json`, `policies.json` | `analyze_incident()` searches KB with safeguards |
 
 ## Directory Structure
 
